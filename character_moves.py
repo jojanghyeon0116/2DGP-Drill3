@@ -3,6 +3,7 @@ from pico2d import *
 open_canvas()
 
 boy = load_image('character.png')
+grass = load_image('grass.png')
 
 def move_top():
     print('Moving top')
@@ -51,6 +52,7 @@ def move_circle():
 
 def draw_boy(x: float, y: float):
     clear_canvas_now()
+    grass.draw_now(400, 30)
     boy.draw_now(x, y)
     delay(0.1)
 
