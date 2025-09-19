@@ -59,6 +59,7 @@ def move_circle():
     pass
 
 def move_crossline_up():
+    print("MOVE CROSSLINE UP")
     steps = 380 // 5
     for i in range(steps + 1):
         x = 780 - i * 5
@@ -68,6 +69,7 @@ def move_crossline_up():
 
 
 def move_crossline_down():
+    print("MOVE CROSSLINE DOWN")
     steps = 380 // 5
     for i in range(steps + 1):
         x = 380 - i * 5
@@ -89,12 +91,12 @@ def draw_boy(x: float, y: float):
     clear_canvas_now()
     grass.draw_now(400, 30)
     boy.draw_now(x, y)
-    delay(0.1)
+    delay(0.01)
 
 while True:
-    # move_circle()
-    # move_rectangle()
+    move_rectangle()
     move_triangle()
+    move_circle()
     break
     pass
 
