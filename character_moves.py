@@ -20,6 +20,8 @@ def move_right():
 
 def move_bottom():
     print('Moving bottom')
+    for x in range(0, 800, 5):
+        draw_boy(x, 90)
     pass
 
 
@@ -30,7 +32,7 @@ def move_left():
 def move_rectangle():
     print("MOVE RECTANGLE")
     # move_top()
-    move_right()
+    # move_right()
     move_bottom()
     move_left()
     pass
