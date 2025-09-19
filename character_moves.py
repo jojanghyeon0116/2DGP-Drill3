@@ -35,7 +35,8 @@ def move_left():
 
 def move_bottom_return():
     print('Moving bottom return')
-
+    for x in range(20, 400, 5):
+        draw_boy(x, 90)
     pass
 
 def move_rectangle():
