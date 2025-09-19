@@ -59,6 +59,11 @@ def move_circle():
     pass
 
 def move_crossline_up():
+    steps = 380 // 5
+    for i in range(steps + 1):
+        x = 780 - i * 5
+        y = 90 + i * 6.2
+        draw_boy(x, y)
     pass
 
 
