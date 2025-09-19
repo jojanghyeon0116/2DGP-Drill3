@@ -58,6 +58,23 @@ def move_circle():
         draw_boy(x, y)
     pass
 
+def move_crossline_up():
+    pass
+
+
+def move_crossline_down():
+    pass
+
+
+def move_triangle():
+    print("MOVE TRIANGLE")
+    move_bottom()
+    move_crossline_up()
+    move_crossline_down()
+    move_bottom_return()
+    pass
+
+
 def draw_boy(x: float, y: float):
     clear_canvas_now()
     grass.draw_now(400, 30)
@@ -66,7 +83,8 @@ def draw_boy(x: float, y: float):
 
 while True:
     # move_circle()
-    move_rectangle()
+    # move_rectangle()
+    move_triangle()
     break
     pass
 
