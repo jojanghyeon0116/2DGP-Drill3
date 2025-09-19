@@ -13,6 +13,8 @@ def move_top():
 
 def move_right():
     print('Moving right')
+    for y in range(90, 600, 5):
+        draw_boy(800, y)
     pass
 
 
@@ -27,7 +29,7 @@ def move_left():
 
 def move_rectangle():
     print("MOVE RECTANGLE")
-    move_top()
+    # move_top()
     move_right()
     move_bottom()
     move_left()
