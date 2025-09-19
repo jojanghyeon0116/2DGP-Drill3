@@ -43,10 +43,10 @@ def move_rectangle():
 
 def move_circle():
     print("MOVE CIRCLE")
-    r = 200
-    for deg in range(0, 360):
-        x = r * math.cos(math.radians(deg)) + 400
-        y = r * math.sin(math.radians(deg)) + 300
+    r = 235
+    for deg in range(-90, 270):
+        x = 400 - r * math.cos(math.radians(deg))
+        y = 325 + r * math.sin(math.radians(deg))
         draw_boy(x, y)
     pass
 
@@ -57,8 +57,8 @@ def draw_boy(x: float, y: float):
     delay(0.1)
 
 while True:
-    # move_circle()
-    move_rectangle()
+    move_circle()
+    # move_rectangle()
     break
     pass
 
